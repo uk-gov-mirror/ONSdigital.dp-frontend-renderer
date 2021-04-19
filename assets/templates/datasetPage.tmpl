@@ -1,0 +1,7 @@
+{{$Language := .Language}}
+{{ template "partials/breadcrumb" . }}
+
+<h1 class="page-intro__title {{ if .Metadata.Description}} {{.Metadata.Description}} {{else}}margin-bottom-sm--4 margin-bottom-md--4{{end}}">
+    {{if eq .Type "dataset"}}<span class="page-intro__type">Dataset(s):</span>{{end}}
+    {{.Metadata.Title}}
+</h1>
